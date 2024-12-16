@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="أكاديمية الريان لكرة القدم تقدم التدريب الاحترافي للفرق وتدريب حراس المرمى مع مدربين محترفين. انضم إلينا لتطوير مهاراتك!" />
+<meta name="keywords" content="أكاديمية رياضة، كرة القدم، حراس مرمى، تدريب رياضي، أكاديمية رياضية" />
+<meta name="author" content="أكاديمية الريان لكرة القدم" />
+<title>أكاديمية الريان لكرة القدم</title>
+
+<!-- إضافة خطوط جوجل -->
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- إضافة Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-XXXXX-Y');
+</script>
+
+<link rel="icon" type="image/x-icon" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/462571378_871014891778074_3151372306098093080_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=CQoeUY0NJuwQ7kNvgFrqwNk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QH7p1RQs7DO61q5l1gaWFWnP4L9igslqnVk5WchI-B51Q&oe=67865198">
+
+<style>
+    /* تعيين الخطوط للعناصر */
+    body {
+        margin: 0;
+        font-family: 'Cairo', sans-serif; /* الخط الأساسي */
+        background-color: #121212;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        overflow: auto;
+        text-align: center;
+    }
+
+    h1, h2, h3 {
+        font-family: 'Amiri', serif; /* العناوين بخط أجمل */
+    }
+
+    p {
+        font-family: 'Tajawal', sans-serif; /* النصوص بخط سهل وواضح */
+    }
+
+    .button {
+        font-family: 'Cairo', sans-serif; /* النص داخل الأزرار */
+    }
+
+    /* تحسين مظهر النصوص والعناصر */
+    h1 {
+        font-size: 3em;
+        color: #b30000;
+        text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+        margin-bottom: 20px;
+        transform: translateY(20px);
+        animation: moveUp 1s ease-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    h1 img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+
+    @keyframes moveUp {
+        from { transform: translateY(50px); }
+        to { transform: translateY(0); }
+    }
+
+    .button {
+        background: linear-gradient(45deg, #b30000, #333);
+        border: none;
+        border-radius: 12px;
+        padding: 20px 40px;
+        color: white;
+        font-size: 1.5em;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+        margin-top: 40px;
+    }
+
+    .button:hover {
+        transform: translateY(-8px);
+        box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .menu li {
+        margin: 10px;
+    }
+
+    .menu li a {
+        font-family: 'Tajawal', sans-serif; /* النص داخل روابط القائمة */
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1em;
+        transition: transform 0.3s ease;
+    }
+
+    .menu li a:hover {
+        transform: scale(1.2);
+        color: #b30000;
+    }
+
+    .home-kit-section, .coaches-section, .details-section {
+        background-color: #222;
+        padding: 40px 20px;
+        text-align: center;
+        margin-top: 40px;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        transform: translateY(20px);
+        animation: moveUp 1s ease-out;
+    }
+
+    .home-kit-section img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 15px;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+        loading="lazy"; /* Lazy loading */
+    }
+
+    .coach {
+        display: inline-block;
+        margin: 20px;
+        width: 250px;
+        text-align: center;
+        transform: translateY(20px);
+        animation: moveUp 1s ease-out;
+    }
+
+    .coach img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+        loading="lazy"; /* Lazy loading */
+    }
+
+    .coach-name {
+        font-size: 1.2em;
+        color: #b30000;
+        margin-top: 10px;
+    }
+
+    .coach-title {
+        font-size: 1em;
+        color: #aaa;
+    }
+
+    .details-section h3 {
+        font-size: 2em;
+        color: #b30000;
+        margin-bottom: 20px;
+    }
+
+    .details-section p {
+        font-size: 1.2em;
+        color: #fff;
+    }
+
+    .instagram-logo {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .instagram-logo:hover {
+        transform: scale(1.2);
+    }
+
+    @media (max-width: 1024px) {
+        h1 { font-size: 2.5em; }
+        .button { padding: 15px 30px; font-size: 1.2em; }
+    }
+
+    @media (max-width: 768px) {
+        h1 { font-size: 2.2em; }
+        .button { padding: 12px 25px; font-size: 1em; }
+        .home-kit-section img { width: 90%; max-width: 500px; }
+    }
+
+    @media (max-width: 480px) {
+        h1 { font-size: 1.8em; }
+        .button { padding: 10px 20px; font-size: 0.9em; }
+        .menu { flex-direction: column; }
+        .home-kit-section img { width: 90%; max-width: 350px; }
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <h1 id="hm"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462579609_1538403410239270_3356194448924669847_n.png?stp=dst-png_s480x480&_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=i3YNgZQVwMMQ7kNvgF3MCU8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QEsMPRkolXnk5OJmON_jFnXekj0HYXuAQcWoV7Tg4TwHQ&oe=67878677" alt="شعار الأكاديمية" /> أكاديمية الريان لكرة القدم</h1>
+        <br>
+        <br>
+        <ul class="menu">
+            <li><a href="#hm">الرئيسية</a></li>
+            <li><a href="#ab">عنّا</a></li>
+            <li><a href="#oc">المدربين</a></li>
+            <li><a href="https://wa.me/96550700434">انضم إلينا</a></li>
+        </ul>
+    </div>
+
+    <div class="home-kit-section">
+        <h2>الطقم الرئيسي</h2>
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462555117_493418103626124_4309187581857488348_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_ohc=s_FdD1IR5aIQ7kNvgEaxNX2&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QGRKUzZtlKOSP3CJ0GGD4vT34DJsRguALs5ydEiRFOhjg&oe=6784E187" alt="Home Kit" loading="lazy"/>
+    </div>
+
+    <div class="coaches-section">
+        <h2 id="oc">المدربين</h2>
+        <div class="coach">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462557784_943747533753606_3769225461377127945_n.jpg?stp=dst-jpg_s526x395_tt6&_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=K1QcGpHUWnQQ7kNvgE0KxOf&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFr7ZdPHGhOdbauo7wV01xKY2kwB9ePobYAWwEB1Jsp7g&oe=6784FEF3" alt="Goalkeeper Coach" loading="lazy"/>
+            <p class="coach-name">محمد حميدي</p>
+            <p class="coach-title">مدرب حراس المرمى</p>
+        </div>
+
+        <div class="coach">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462563571_1322384032109206_4296352906534578596_n.jpg?stp=dst-jpg_s552x414_tt6&_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=-b_G3WJNJ0wQ7kNvgGXB9mG&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFOgd6O60l2ncKyRrokXNelrDQC0e3BcSn00NCQNf6wIw&oe=67850980" alt="Football Coach" loading="lazy"/>
+            <p class="coach-name">محمد السيد</p>
+            <p class="coach-title">مدرب الفريق</p>
+        </div>
+    </div>
+
+    <div class="details-section">
+        <h3 id="ab">عنّا</h3>
+        <p>الموقع: <a href="https://maps.app.goo.gl/8SW1mLAkcYJAruZa9" target="_blank">ملعب أم الهيمان بجانب المستوصف</a></p>
+
+        <p>الأيام: الأحد، الثلاثاء، الخميس</p>
+        <p>الوقت: 8:30 مساءً إلى 10:00 مساءً</p>
+        <p>+الأعمار: 17</p>
+        <p>تدريب / مباريات / بطولات / معسكرات</p>
+        <br>
+        <a href="https://www.instagram.com/alrayansc1/?hl=ar" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="instagram-logo" />
+        </a>
+        <br>
+
+        <a href="https://wa.me/96550700434" target="_blank">
+            <button class="button">انضم إلينا الآن</button>
+        </a>
+    </div>
+</body>
+</html>
+
+
